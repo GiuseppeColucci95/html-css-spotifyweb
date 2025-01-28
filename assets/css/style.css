@@ -6,6 +6,33 @@
   box-sizing: border-box;
 }
 
+:root {
+  --sp-nav-bg-color: black;
+  --sp-footer-bg-color: #282828;
+  --sp-main-bg-color: #141922;
+  --sp-text-main-color: white;
+  --sp-text-secondary-color: #a3a3a3;
+}
+
+.debug {
+
+  .top {
+    height: calc(100vh - 90px);
+    background-color: yellow;
+
+    .nav {
+      width: 230px;
+      height: 100%;
+      background-color: black;
+    }
+  }
+
+  .bottom {
+    height: 90px;
+    background-color: var(--sp-footer-bg-color);
+  }
+}
+
 /* #endregion common */
 
 /* #region utilities */
@@ -13,3 +40,21 @@
 
 
 /* #endregion utilities */
+
+/* #region nav */
+
+
+
+/* #endregion nav */
+
+/* #region main */
+
+
+
+/* #endregion main */
+
+/* #region bottom */
+
+
+
+/* #endregion bottom */
