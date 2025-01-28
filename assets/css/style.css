@@ -56,10 +56,26 @@ body {
   height: calc(100vh - 90px);
   background-color: var(--sp-main-bg-color);
 
+  display: flex;
+
   .nav {
     width: 230px;
     height: 100%;
-    background-color: black;
+    padding: 1rem;
+    background-color: var(--sp-nav-bg-color);
+    color: var(--sp-text-secondary-color);
+
+    img[alt^="small"] {
+      display: none;
+    }
+
+    .logo>img {
+      max-width: 160px;
+    }
+
+    li>img {
+      width: 20px;
+    }
   }
 }
 
