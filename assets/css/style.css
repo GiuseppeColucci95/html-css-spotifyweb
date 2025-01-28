@@ -246,6 +246,15 @@ body {
         }
       }
 
+      .created-for,
+      .most-popular {
+
+        h5 {
+          font-size: 0.95rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+
       /* utilities */
 
       nav {
@@ -274,11 +283,10 @@ body {
         }
       }
 
-      .created-for {
+      .most-popular {
 
-        h5 {
-          font-size: 0.95rem;
-          margin-bottom: 1.5rem;
+        img {
+          border-radius: 10rem;
         }
       }
     }
