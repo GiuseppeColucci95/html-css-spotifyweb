@@ -300,6 +300,10 @@ body {
 .bottom {
   height: 90px;
   background-color: var(--sp-footer-bg-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* #endregion bottom */
