@@ -14,6 +14,7 @@
   --sp-main-header-bg-color: rgba(0, 0, 0, 0.3);
   --sp-text-main-color: white;
   --sp-text-secondary-color: #a3a3a3;
+  --sp-highlighter-color: #adff2f;
 }
 
 body {
@@ -104,6 +105,10 @@ body {
             padding: 0.5rem 1.3rem;
             border-left: 3px solid transparent;
 
+            &:first-child {
+              border-left: 3px solid var(--sp-highlighter-color);
+            }
+
             img {
               width: 25px;
             }
@@ -140,7 +145,6 @@ body {
           }
         }
       }
-
     }
 
     .bottom-nav {
@@ -205,6 +209,35 @@ body {
         border-radius: 2rem;
       }
     }
+
+    nav {
+
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+        padding: 1.5rem;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-weight: 500;
+
+          &:first-child::after {
+            display: block;
+            content: '';
+            width: 35px;
+            height: 2px;
+            margin-top: 0.25rem;
+            background-color: var(--sp-highlighter-color);
+          }
+        }
+      }
+    }
+
+
   }
 }
 
