@@ -230,7 +230,7 @@ body {
 
   main {
     overflow-y: auto;
-    width: calc(100vw - 230px);
+    width: calc(100% - 230px);
     background-color: var(--sp-main-bg-color);
     color: var(--sp-text-secondary-color);
 
@@ -280,6 +280,39 @@ body {
           padding: 0.5rem 0;
           color: var(--sp-text-main-color);
         }
+
+        .image {
+          position: relative;
+        }
+
+        .card-hover {
+          width: 100%;
+          height: calc(100% - 4px);
+          background-color: rgba(0, 0, 0, 0.4);
+
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          i {
+            font-size: 4rem;
+            color: var(--sp-text-main-color);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          display: none;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          .card-hover {
+            display: block;
+          }
+        }
       }
 
       .created-for,
@@ -327,6 +360,11 @@ body {
       .most-popular {
 
         img {
+          border-radius: 10rem;
+        }
+
+        .card-hover {
+          height: calc(100% - 4px);
           border-radius: 10rem;
         }
       }
