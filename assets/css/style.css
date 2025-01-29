@@ -402,10 +402,21 @@ body {
       color: var(--sp-text-main-color);
     }
 
+    h6:hover {
+      text-decoration: underline;
+      color: var(--sp-text-main-color);
+      cursor: pointer;
+    }
+
     .icons {
       display: flex;
       gap: 1rem;
       padding-left: 3rem;
+
+      i:hover {
+        color: var(--sp-text-main-color);
+        cursor: pointer;
+      }
     }
   }
 
