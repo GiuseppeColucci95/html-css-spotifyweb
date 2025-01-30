@@ -90,7 +90,7 @@ body {
     justify-content: space-between;
 
     .top-nav {
-      min-height: 300px;
+      min-height: 320px;
 
       .logo {
         padding: 1.5rem;
